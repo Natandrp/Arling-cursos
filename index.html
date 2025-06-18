@@ -216,7 +216,6 @@
             align-items: center;
             padding: 150px 0;
             min-height: 100vh;
-            /*A imagem abaixo foi gerada por Leonard.AI*/
             background-image: url('backgroundImage/LapTop-secao1.jpg');
             background-repeat: no-repeat;
             background-position: center center;
@@ -365,14 +364,13 @@
             box-shadow: 0 3px 10px rgba(76, 175, 80, 0.2);
         }
 
-       
+        /* Seção Governo - Correções aplicadas */
         .governo {
-            /*Créditos ao autor e para o FreePik pela imagem usada abaixo -"https://br.freepik.com/fotos-gratis/bela-natureza-retro-com-campo_31589942.htm"*/
             background-image: url('backgroundImage/bela-natureza-retro-com-campo\ \(4\).jpg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: 800px;
+            min-height: 100vh;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -383,7 +381,6 @@
             position: relative;
             z-index: 0;
             overflow: hidden;
-        
         }
 
         .governo::before {
@@ -400,21 +397,19 @@
             z-index: -1;
         }
 
-    
         .homem-do-campo h2 {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 50px;
-            color: #ffffff; /* Alterado para branco sólido */
+            color: #ffffff;
             text-shadow: 
-                2px 2px 4px rgba(0, 0, 0, 0.8), /* Sombra escura para contraste */
-                0 0 10px rgba(0, 255, 111, 0.5); /* Brilho verde para manter o estilo */
+                2px 2px 4px rgba(0, 0, 0, 0.8),
+                0 0 10px rgba(0, 255, 111, 0.5);
             position: relative;
             display: inline-block;
             padding: 15px 30px;
-            background-color: rgba(0, 31, 18, 0.7); /* Fundo semi-transparente escuro */
+            background-color: rgba(0, 31, 18, 0.7);
             border-radius: 8px;
             border: 2px solid #00FF6F;
-            
         }
 
         .homem-do-campo h2::after {
@@ -428,7 +423,7 @@
             border-radius: 3px;
         }
 
-         .texto-governo {
+        .texto-governo {
             position: relative;
             z-index: 1;
             width: 100%;
@@ -436,10 +431,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
-            
-
         }
-        
 
        .texto-desenvolvimento{
         background: rgba(0, 31, 18, 0.76);
@@ -449,18 +441,9 @@
         margin: 20px 0px;
         border-radius: 20px;
        }
-        @keyframes rotateBorder {
-            0% {
-                transform: rotate(0deg);
-            }
-            100% {
-                transform: rotate(360deg);
-            }
-        }
 
-        /* Seção descricao */
+        /* Seção descricao - Correções aplicadas */
         .descricao {
-            /*A imagem abaixo foi gerada por Leonard.AI*/
             background-image: url('backgroundImage/Homem-secao4.jpg');
             background-position: 0%;
             background-repeat: no-repeat;
@@ -662,7 +645,7 @@
             font-size: 14px;
         }
 
-        /* Responsividade */
+        /* Responsividade - Correções aplicadas */
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
@@ -699,10 +682,25 @@
                 grid-template-columns: 1fr;
             }
             
+            /* Correção 1: Imagens de fundo */
+            .hero, .descricao {
+                background-attachment: scroll !important;
+                background-position: center center;
+            }
+            
+            /* Correção 2: Texto governo */
+            .texto-desenvolvimento {
+                width: 95% !important;
+                padding: 20px !important;
+                font-size: 0.9rem;
+                line-height: 1.6;
+            }
+            
+            /* Correção 3: Imagem de fundo governo */
             .governo {
-                flex-direction: column;
-                height: auto;
-                padding: 50px 20px;
+                background-size: auto 100%;
+                background-position: 60% center;
+                padding: 30px 0px 0px 0px !important;
             }
             
             .homem-do-campo h2 {
@@ -710,20 +708,9 @@
                 margin-bottom: 30px;
                 padding: 10px 20px;
             }
-            
-            .governo-image-container {
-                width: 100%;
-                transform: none;
-                height: auto;
-            }
-            
-            .governo-image {
-                height: 300px;
-            }
         }
     </style>
 
- <!--O favicon abaixo foi criado com ajuda da ferramenta "Canva".-->
    <link rel="icon" href="backgroundImage/favicon.png" type="image/x-icon">
 
 </head>
@@ -753,7 +740,6 @@
         </div>
     </header>
 
-    <!-- Seção de cards ampliada -->
     <section class="cards-section">
         <div class="container">
             <div class="section-header">
@@ -762,7 +748,6 @@
             </div>
             <div class="cards-container">
                 <article class="card">
-                    <!--Créditos abaixo ao autor e para o Freepik - "https://br.freepik.com/fotos-gratis/conceito-de-colagem-de-html-e-css_36295536.htm"-->
                     <div class="card-img">
                         <img src="imagensCards/conceito-de-colagem-de-html-e-css.jpg" alt="Conceito de colagem representando HTML e CSS">
                     </div>
@@ -776,7 +761,6 @@
                 </article>
 
                 <article class="card">
-                    <!--Abaixo créditos ao autor e para o Freepik - "https://br.freepik.com/fotos-gratis/feche-as-maos-segurando-o-telefone-com-aplicativos_20262564.htm"-->
                     <div class="card-img">
                         <img src="imagensCards/feche-as-maos-segurando-o-telefone-com-aplicativos.jpg" alt="Mãos segurando telefone com aplicativos">
                     </div>
@@ -789,7 +773,6 @@
                 </article>
 
                  <article class="card">
-                    <!--Abaixo créditos ao autor e para o Freepik - "https://br.freepik.com/fotos-gratis/representacoes-da-experiencia-do-usuario-e-design-de-interface_36298557.htm"-->
                     <div class="card-img">
                         <img src="imagensCards/representacoes-da-experiencia-usuario-e-design-de-interface.jpg" alt="Representações de experiência do usuário e design de interface">
                     </div>
@@ -802,7 +785,6 @@
                 </article>
 
                 <article class="card">
-                    <!--Abaixo crédito ao autor e para o Freepik - "https://br.freepik.com/fotos-gratis/close-up-da-caixa-com-vegetais-maduros_11600575.htm"-->
                     <div class="card-img">
                         <img src="imagensCards/close-up-da-caixa-com-vegetais-maduros.jpg" alt="Representação de inteligência artificial e Python">
                     </div>
@@ -814,7 +796,6 @@
                 </article>
 
                 <article class="card">
-                    <!--Créditos a imagem abaixo ao autor e para o Freepik - "https://br.freepik.com/fotos-gratis/o-tecnico-consertando-o-computador-hardware-de-computador-consertando-atualize-e-tecnologia_4334582.htm"-->
                     <div class="card-img">
                         <img src="imagensCards/o-tecnico-consertando-o-computador-hardware-de-computador-consertando-atualize-e-tecnologia.jpg" alt="Técnico em informática consertando um computador">
                     </div>
@@ -874,17 +855,12 @@
         </div>
     </section>
 
-  
-    
     <section class="governo">
-
       <section class="texto-governo">
         <div class="homem-do-campo">
             <h2>Do agro para o homem do campo</h2>
-
         </div>
 
-        <!--Créditos para a inteligência artificial "deep seek" por criar o texto fictício abaixo-->
         <article id="Mais-informacoes" class="texto-desenvolvimento">
         <p>É com grande orgulho e um profundo senso de responsabilidade que anunciamos hoje uma iniciativa transformadora: a criação de uma plataforma nacional de cursos online gratuitos em tecnologia, dedicada a quem vive e trabalha na zona rural. Esta é uma ação que reflete nosso compromisso com a inclusão digital, o desenvolvimento justo e a garantia de que ninguém, em nenhum canto deste país, fique para trás na era do conhecimento.
 
@@ -906,13 +882,8 @@ Muito obrigado, e que Deus abençoe a todos nós.
 
 Governo Federal
 Trabalhando por um Brasil digital, inclusivo e soberano.</p>
-
         </article>
       </section>  
-        
-    
-         
-      
     </section>
 
     <section class="descricao">
