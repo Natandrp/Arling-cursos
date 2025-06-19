@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
-    
+
     <title>Minha Landing Page</title>
 
     <style>
@@ -17,11 +17,11 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-         :root{
-           --verde-claro: #00FF6F;
-           --degrade-cards: linear-gradient(to top, rgb(210, 216, 188),white );
-           --azul-escuro: #001933;
-         }
+        :root {
+            --verde-claro: #00FF6F;
+            --degrade-cards: linear-gradient(to top, rgb(210, 216, 188), white);
+            --azul-escuro: #001933;
+        }
 
         .créditos {
             background-color: none;
@@ -370,13 +370,13 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            min-height: 100vh;
+            min-height: 80vh;
             width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            padding: 60px 0px 0px 0px;
+            padding: 50px 0px 0px 0px;
             color: white;
             position: relative;
             z-index: 0;
@@ -401,7 +401,7 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 50px;
             color: #ffffff;
-            text-shadow: 
+            text-shadow:
                 2px 2px 4px rgba(0, 0, 0, 0.8),
                 0 0 10px rgba(0, 255, 111, 0.5);
             position: relative;
@@ -433,14 +433,25 @@
             align-items: center;
         }
 
-       .texto-desenvolvimento{
-        background: rgba(0, 31, 18, 0.76);
-        height: auto;
-        width: 80%;
-        padding: 30px 50px;
-        margin: 20px 0px;
-        border-radius: 20px;
-       }
+        .texto-desenvolvimento {
+            background: rgba(0, 31, 18, 0.877);
+            height: auto;
+            width: 70%;
+            padding: 30px 50px;
+            margin: 20px 0px;
+            border-radius: 10px;
+        }
+
+        /* Espaçamento entre parágrafos */
+        .texto-desenvolvimento p {
+            margin-bottom: 1.5em;
+            line-height: 1.6;
+            font-size: large;
+        }
+
+        .texto-desenvolvimento p:last-child {
+            margin-bottom: 0;
+        }
 
         /* Seção descricao - Correções aplicadas */
         .descricao {
@@ -645,7 +656,7 @@
             font-size: 14px;
         }
 
-        /* Responsividade - Correções aplicadas */
+
         @media (max-width: 768px) {
             .nav-container {
                 flex-direction: column;
@@ -681,47 +692,38 @@
             .cards-container {
                 grid-template-columns: 1fr;
             }
-            
-            /* Correção 1: Imagens de fundo */
-            .hero, .descricao {
+
+
+            .hero,
+            .descricao {
                 background-attachment: scroll !important;
                 background-position: center center;
             }
-            
-            /* Correção 2: Texto governo */
+
+
             .texto-desenvolvimento {
                 width: 95% !important;
                 padding: 20px !important;
                 font-size: 0.9rem;
                 line-height: 1.6;
             }
-            
-            /* Correção 3: Imagem de fundo governo */
+
+
             .governo {
                 background-size: auto 100%;
                 background-position: 60% center;
                 padding: 30px 0px 0px 0px !important;
             }
-            
+
             .homem-do-campo h2 {
                 font-size: 32px;
                 margin-bottom: 30px;
                 padding: 10px 20px;
-
-
-             .texto-desenvolvimento{
-        background: white;
-        height: auto;
-        width: 80%;
-        padding: 30px 50px;
-        margin: 20px 0px;
-       
-       }    
             }
         }
     </style>
 
-   <link rel="icon" href="backgroundImage/favicon.png" type="image/x-icon">
+    <link rel="icon" href="backgroundImage/favicon.png" type="image/x-icon">
 
 </head>
 
@@ -754,12 +756,16 @@
         <div class="container">
             <div class="section-header">
                 <h2>Alguns dos nossos Cursos</h2>
-                <p>Escolha entre nossa variedade de cursos de tecnologia disponibilizados por profissionais que compreendem muito bem.</p>
+                <p>Escolha entre nossa variedade de cursos de tecnologia disponibilizados por profissionais que
+                    compreendem muito bem.</p>
             </div>
             <div class="cards-container">
                 <article class="card">
+                    <!--Créditos ao autor e para o Freepik - -->
+
                     <div class="card-img">
-                        <img src="imagensCards/conceito-de-colagem-de-html-e-css.jpg" alt="Conceito de colagem representando HTML e CSS">
+                        <img src="imagensCards/conceito-de-colagem-de-html-e-css.jpg"
+                            alt="Conceito de colagem representando HTML e CSS">
                     </div>
 
                     <div class="card-content">
@@ -771,8 +777,11 @@
                 </article>
 
                 <article class="card">
+                    <!--Créditos ao autor e para o Freepik - -->
+
                     <div class="card-img">
-                        <img src="imagensCards/feche-as-maos-segurando-o-telefone-com-aplicativos.jpg" alt="Mãos segurando telefone com aplicativos">
+                        <img src="imagensCards/feche-as-maos-segurando-o-telefone-com-aplicativos.jpg"
+                            alt="Mãos segurando telefone com aplicativos">
                     </div>
                     <div class="card-content">
                         <h3>Desenvolvimento Mobile</h3>
@@ -782,9 +791,12 @@
                     </div>
                 </article>
 
-                 <article class="card">
+                <article class="card">
+                    <!--Créditos ao autor e para o Freepik - "https://br.freepik.com/fotos-gratis/representacoes-da-experiencia-do-usuario-e-design-de-interface_36298557.htm"-->
+
                     <div class="card-img">
-                        <img src="imagensCards/representacoes-da-experiencia-usuario-e-design-de-interface.jpg" alt="Representações de experiência do usuário e design de interface">
+                        <img src="imagensCards/representacoes-da-experiencia-usuario-e-design-de-interface.jpg"
+                            alt="Imagem ilustra o design de interfaces.">
                     </div>
                     <div class="card-content">
                         <h3>UX/UI Design</h3>
@@ -795,35 +807,45 @@
                 </article>
 
                 <article class="card">
+                    <!--Créditos ao autor e para o Freepik - "https://br.freepik.com/fotos-gratis/close-up-da-caixa-com-vegetais-maduros_11600575.htm"-->
+
                     <div class="card-img">
-                        <img src="imagensCards/close-up-da-caixa-com-vegetais-maduros.jpg" alt="Representação de inteligência artificial e Python">
+                        <img src="imagensCards/close-up-da-caixa-com-vegetais-maduros.jpg"
+                            alt="Representação de inteligência artificial e Python">
                     </div>
                     <div class="card-content">
                         <h3>Empreendedorismo Rural</h3>
-                        <p>Cooperativas, associações, preparação para lidar com burocracia e tributos. Aprenda como tudo funciona.</p>
+                        <p>Cooperativas, associações, preparação para lidar com burocracia e tributos. Aprenda como tudo
+                            funciona.</p>
                         <a href="#" class="card-btn">Saiba Mais</a>
                     </div>
                 </article>
 
                 <article class="card">
+                    <!--Créditos ao autor e para o Freepik - -->
+
                     <div class="card-img">
-                        <img src="imagensCards/o-tecnico-consertando-o-computador-hardware-de-computador-consertando-atualize-e-tecnologia.jpg" alt="Técnico em informática consertando um computador">
+                        <img src="imagensCards/o-tecnico-consertando-o-computador-hardware-de-computador-consertando-atualize-e-tecnologia.jpg"
+                            alt="Técnico em informática consertando um computador">
                     </div>
                     <div class="card-content">
                         <h3>Técnico em informática</h3>
-                        <p>Aprenda mais sobre informática e montagem de computadores, focando em hardwares e softwares atuais.</p>
+                        <p>Aprenda mais sobre informática e montagem de computadores, focando em hardwares e softwares
+                            atuais.</p>
                         <a href="#" class="card-btn">Saiba Mais</a>
                     </div>
                 </article>
 
                 <article class="card">
+                    <!--Créditos ao autor e para o Freepik - -->
                     <div class="card-img">
-                        <img src="imagensCards/o-inspetor-financeiro-e-o-secretario-fazem-relatorio-calculam-ou-verificam-o-saldo-documento-de-verificacao-inspetor-servico-de-receita-federal-conceito-de-auditoria.jpg" 
-                        alt="representação de administradores trabalhando">
+                        <img src="imagensCards/o-inspetor-financeiro-e-o-secretario-fazem-relatorio-calculam-ou-verificam-o-saldo-documento-de-verificacao-inspetor-servico-de-receita-federal-conceito-de-auditoria.jpg"
+                            alt="representação de administradores trabalhando">
                     </div>
                     <div class="card-content">
                         <h3>Administração</h3>
-                        <p>Tudo o que precisa para se capacitar a um emprego em esritório com marketing, gestão de pessoas, gestão financeira e muito mais.
+                        <p>Tudo o que precisa para se capacitar a um emprego em esritório com marketing, gestão de
+                            pessoas, gestão financeira e muito mais.
                         </p>
                         <a href="#" class="card-btn">Saiba Mais</a>
                     </div>
@@ -831,29 +853,36 @@
 
                 <article class="card">
                     <div class="card-img">
-                        <img src="imagensCards/colheitadeira-trabalhando-no-campo.jpg" alt="Colheitadeira colhendo no campo">
+                        <img src="imagensCards/colheitadeira-trabalhando-no-campo.jpg"
+                            alt="Colheitadeira colhendo no campo">
                     </div>
                     <div class="card-content">
                         <h3>Operador de máquinas agrícolas</h3>
-                        <p>Aprenda a operar máquinas agrícolas usadas em colheitas e dicas básicas de manutenção e segurança.</p>
+                        <p>Aprenda a operar máquinas agrícolas usadas em colheitas e dicas básicas de manutenção e
+                            segurança.</p>
                         <a href="#" class="card-btn">Saiba Mais</a>
                     </div>
                 </article>
 
                 <article class="card">
+                    <!--Créditos ao autor e para o Freepik - "https://br.freepik.com/imagem-ia-gratis/ilustracao-do-conceito-de-ciberseguranca_382535173.htm"-->
                     <div class="card-img">
-                        <img src="" alt="">
+                        <img src="imagensCards/ciberSegurança.jpg"
+                            alt="Símbolo de cadeado que representa a segurança online.">
                     </div>
                     <div class="card-content">
-                        <h3></h3>
-                        <p></p>
+                        <h3>Introdução à Segurança da Informação</h3>
+                        <p>Redes de computadores, sistemas operacionais, proteção de infraestrutura, criptografia e
+                            mais.</p>
                         <a href="#" class="card-btn">Saiba Mais</a>
                     </div>
                 </article>
 
                 <article class="card">
+                    <!--Créditos ao autor e para a Freepik - "https://br.freepik.com/fotos-gratis/conceito-de-marketing-de-midia-social-para-marketing-com-aplicativos_36295051.htm"-->
                     <div class="card-img">
-                        <img src="" alt="">
+                        <img src="imagensCards/conceito-de-marketing-de-midia-social-para-marketing-com-aplicativos.jpg"
+                            alt="Uma mulher saindo da tela de um telefone com um megafone em mãos, simbolizando o marketing">
                     </div>
                     <div class="card-content">
                         <h3>Marketing Digital e Vendas Online</h3>
@@ -866,35 +895,27 @@
     </section>
 
     <section class="governo">
-      <section class="texto-governo">
-        <div class="homem-do-campo">
-            <h2>Do agro para o homem do campo</h2>
-        </div>
+        <section class="texto-governo">
+            <div class="homem-do-campo">
+                <h2>Do agro para o homem do campo</h2>
+            </div>
 
-        <article  class="texto-desenvolvimento">
-        <p>É com grande orgulho e um profundo senso de responsabilidade que anunciamos hoje uma iniciativa transformadora: a criação de uma plataforma nacional de cursos online gratuitos em tecnologia, dedicada a quem vive e trabalha na zona rural. Esta é uma ação que reflete nosso compromisso com a inclusão digital, o desenvolvimento justo e a garantia de que ninguém, em nenhum canto deste país, fique para trás na era do conhecimento.
-
-O campo é o coração que alimenta o Brasil, e sabemos que, com as ferramentas certas, ele pode ser também um celeiro de inovação e prosperidade. Muitas vezes, os moradores das áreas rurais enfrentam dificuldades para acessar capacitação técnica, seja pela distância dos grandes centros, seja pela falta de recursos. Isso acaba limitando oportunidades que poderiam revolucionar vidas e negócios.
-
-Com essa plataforma, estamos mudando essa realidade. Agricultores, jovens, trabalhadores rurais e suas famílias terão à disposição cursos que vão desde noções básicas de informática até habilidades avançadas, como programação, gestão de negócios digitais e tecnologias aplicadas ao agronegócio. Imagine um produtor aprendendo a usar aplicativos para melhorar sua colheita, um jovem capacitado para trabalhar remotamente em empresas de todo o mundo ou uma família ampliando suas vendas por meio do comércio eletrônico. Essas são as portas que estamos abrindo.
-
-Além disso, essa iniciativa é um passo decisivo para reduzir o êxodo rural. Queremos que nossos jovens vejam no campo não apenas um lugar de tradição, mas de futuro — onde a tecnologia e a educação permitam sonhar e realizar sem precisar deixar suas raízes. Queremos um campo conectado, onde o acesso ao conhecimento fortaleça comunidades inteiras e traga mais dignidade a quem produz o alimento que chega à nossa mesa.
-
-Sabemos que a internet ainda não chegou a todos os cantos do país com a qualidade necessária, e estamos trabalhando para mudar isso. Mas onde o sinal já existe, essa plataforma será uma ponte para um novo tempo. E onde ainda há desafios, continuaremos investindo em infraestrutura para que, em breve, todos tenham essa oportunidade.
-
-Esta é uma conquista para o Brasil real, o Brasil que acorda cedo, que cultiva a terra e que merece ter acesso às mesmas oportunidades que as grandes cidades. Educação e tecnologia não são privilégios — são direitos, e é nosso dever garantir que eles cheguem a todos.
-
-Convidamos cada família, cada jovem, cada trabalhador do campo a se apropriarem dessa ferramenta. Acessem, estudem, cresçam. O governo está aqui para apoiar, mas é com a força de vocês que vamos construir um país mais justo, mais desenvolvido e mais unido.
-
-O futuro do Brasil passa pelo campo. E o futuro do campo começa agora.
-
-Muito obrigado, e que Deus abençoe a todos nós.
-
-Governo Federal
-Trabalhando por um Brasil digital, inclusivo e soberano.</p>
-        </article>
-      </section>  
+            <article class="texto-desenvolvimento">
+                <p>É com grande alegria que anunciamos o começo de mais um projeto inovador na educação do estado do Paraná, a criação de uma plataforma de cursos online gratuitos específicos para a área da tecnologia, tendo como público alvo os jovens moradores rurais que residem distantes da cidade.</p>
+                
+                <p>Devido a perceptível escassez de oportunidades no campo e a grande demanda por jovens experintes nas mais variadas áreas da tecnologia, foi decidido pelo próprio governo do paraná, a criação e emplementação da plataforma de cursos tecnológicos gratuitos "Arling", criada e desenvolvida em parceria com as melhores universidades públicas presentes no estado.</p>
+                
+                <p>É prioridade nossa cuidar da educação, formação técnica e acadêmica de nossos jovens moradores do campo, despertando no cidadão rural a vontade e facínio pela busca constante de conhecimento tecnológico, e graças aos nossos avanços, como a constante atribuição das torres de internet 4G no campo, já é possível realizar tal projeto em proporções iniciais.</p>
+                
+                <p>Nossa objetivo é trazer o conhecimento como um direito, ao invés de privilégio. Em nossa plataforma de cursos online, alunos do campo e da cidade podem usufruir de aulas gravadas ou ao vivo de diversos assuntos diferentes.</p>
+                
+                <p>É também de importante destaque, a possibilidade de aulas em vídeo chamada em tempo real no qual o estudante tem total liberdade em marcar um horário com um professor escolhido, ou participar de chamadas públicas com o professor e os demais estudantes.</p>
+                
+                <p>Toda essa estrutura se dá graças a coleta exacerbada de impostos feita por nós mesmos, em cima do próprio bolso do produtor rural.</p>
+            </article>
+        </section>
     </section>
+
 
     <section class="descricao">
         <div class="section_container">
@@ -911,7 +932,7 @@ Trabalhando por um Brasil digital, inclusivo e soberano.</p>
         <div class="container">
             <div class="section-title">
                 <h2>Nossos Recursos</h2>
-                <p>Conheça as funcionalidades que tornam nosso produto único no mercado</p>
+                <p>Conheça as funcionalidades que tornam nossa plataforma única.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -921,7 +942,7 @@ Trabalhando por um Brasil digital, inclusivo e soberano.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🤖</div>
-                    <h3>Automação Inteligente</h3>
+                    <h3>Automação de respostas</h3>
                     <p>Use nossa ferramenta de AI para tirar dúvidas.</p>
                 </div>
                 <div class="feature-card">
@@ -935,9 +956,9 @@ Trabalhando por um Brasil digital, inclusivo e soberano.</p>
 
     <section class="cta">
         <div class="container">
-            <h2>Pronto para transformar seu negócio?</h2>
-            <p>Junte-se a milhares de empresas que já estão usando nossa plataforma.</p>
-            <a href="#" class="btn btn-secondary">Experimente Grátis</a>
+            <h2>Pronto para Estudar?</h2>
+            <p>Agende uma aula com um professor a qualquer momento.</p>
+            <a href="#" class="btn btn-secondary">Experimente</a>
         </div>
     </section>
 
@@ -946,7 +967,7 @@ Trabalhando por um Brasil digital, inclusivo e soberano.</p>
             <div class="footer-grid">
                 <div class="footer-column">
                     <h3>Sobre Nós</h3>
-                    <p>Uma empresa inovadora dedicada a criar soluções que fazem a diferença.</p>
+                    <p>Plataforma pública e gratuita de educação.</p>
                 </div>
                 <div class="footer-column">
                     <h3>Links Rápidos</h3>
