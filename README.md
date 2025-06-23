@@ -1,2 +1,3 @@
 # Arling-cursos
-Landing page de uma plataforma de cursos grátis.
+Este site se trata de uma landing page feita para o evento agrinho de 2025. Ela é basicamente a landing page (tipo de site focado principalmente em mostrar conteúdo sobre determinado negócio breviamente), de uma plataforma de cursos criada pelo governo (totalmente fictício). O real objetivo desse site é propor a criação de uma plataforma de cursos de qualidade e totalmente gratuita para os jovens moradores e residentes do campo. Em meio ao site, você se deparará com uma crítica proposital.
+ O site não apresenta muitas funções por ser algo feito apenas utilizando html e css, e como dito anteriormente, a landing page tem foco de resumidamente, mostrar uma ideia ou produto a fim de convenver o usuário. Não se trata de nada inovador, mas se trata de algo extremamente nescessário nos dias atuais.
